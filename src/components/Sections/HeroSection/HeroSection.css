@@ -1,0 +1,49 @@
+.heroSection {
+  background: url("../../Assets/b.png") 50% 100px no-repeat fixed;
+  background-size: cover;
+  height:100vh;
+}
+
+
+
+.popup{
+  background: url("../../Assets/p.jpeg") no-repeat ;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ width:130vh;
+ height: 70vh;
+}
+
+
+.section-one-wrapper h1{
+  line-height: 62px;
+  font-size:67px;
+  color:whitesmoke;
+  margin-top:42px;
+  font-weight:bolder;
+}
+.section-one-wrapper p{
+  color: #d1d1c9;
+
+font-size: 14px;
+margin-top:19px;
+}
+
+.section-one-wrapper span{
+   color:#33ff00;
+}
+
+@media screen and (max-width: 578px) {
+  .heroSection {
+    background-image: url("../../Assets/AccountAssistantHero_Mobile.png");
+  }
+}
+@media screen and (min-width: 1024px) {
+  .heroSection {
+    background-attachment: fixed;
+    
+  }
+}
+

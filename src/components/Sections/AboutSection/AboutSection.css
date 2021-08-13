@@ -1,0 +1,226 @@
+.aboutSectionContainer {
+  background-color: #eeeeee;
+}
+
+.aboutTitle {
+  color: var(--textColor);
+}
+
+.aboutTitle span {
+  color: #12ff13;
+}
+
+.section-title h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--textColor);
+}
+
+.section-title h2:after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--buttonBackground);
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+}
+
+.member-about {
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.member-about::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.member-about::-webkit-scrollbar-track {
+  background: #626dff;
+  border-radius: 3px;
+}
+
+/* Handle */
+.member-about::-webkit-scrollbar-thumb {
+  background: rgb(181, 230, 29);
+  border-radius: 3px;
+}
+
+/* ---------- FLIP CARD---------- */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 298px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.3s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  position: relative;
+}
+
+.flip-card-front .member-name {
+  padding: 0.3rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.408);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.flip-card-front .member-name span {
+  font-style: italic;
+  font-weight: 550;
+  font-size: 0.8rem;
+}
+
+.flip-card-back {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(141,240,255,1) 53%, rgba(0,212,255,1) 87%);
+  color: purple;
+  transform: rotateY(180deg);
+  top: 0;
+}
+
+.flip-card-back {
+  text-align: left;
+  padding: 1rem;
+}
+
+.flip-card-back .flipButton,
+.flip-card-front .flipButton {
+  position: absolute;
+  right: 5px;
+  bottom: 6px;
+  color: #000;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background: var(--textColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* ---------- FLIP CARD---------- */
+
+/* Carousel Css */
+
+.aboutSectionContainer .owl-nav {
+  display: block !important;
+}
+
+.aboutSectionContainer .owl-nav button {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 6rem !important;
+  font-weight: 100 !important;
+  color: #333128 !important;
+}
+
+.aboutSectionContainer .owl-prev {
+  left: -20px;
+}
+
+.aboutSectionContainer .owl-next {
+  right: -20px;
+}
+
+@media screen and (max-width: 578px) {
+  .section-title h2:after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: transparent;
+    margin: 0;
+  }
+
+  .section-title p {
+    font-size: 1.4rem;
+  }
+
+  .member {
+    width: 100%;
+  }
+
+  .aboutSectionContainer .container {
+    padding: 0;
+  }
+
+  .flip-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutSectionContainer .owl-nav button {
+    color: #fff !important;
+  }
+
+  .aboutSectionContainer .owl-prev {
+    left: 5px;
+  }
+
+  .aboutSectionContainer .owl-next {
+    right: 5px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #aboutSection .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #aboutSection .container {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,33 @@
+.main-block .image{
+    width: 25%;
+    float: left;
+    position: relative;
+    margin-top: 40vh;              
+    line-height: 2em;
+    transform: translate(0, -50%);
+    z-index: 300;
+}
+.main-block .image img{
+    max-width: 200px;
+    width: 66%;
+}
+.main-block .image img:hover{
+    transform: scale(1.5,1.5);
+}
+@media screen and (max-width: 768px) {
+    .main-block .image{
+        margin: 0%;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        background-attachment: fixed;
+        transform: translateZ(-1px);
+    }
+    .main-block .image img{
+        width: 100%;
+        max-width: none;
+    }
+    .main-block .image img:hover{
+        transform: none;
+    }
+}

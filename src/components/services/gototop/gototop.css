@@ -1,0 +1,27 @@
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #3F48CB;
+    cursor: pointer;
+    padding: 0px 5px;
+    border-radius: 4px;
+    z-index: 1000;
+    border: 1px solid #3F48CB;
+  }
+  
+  #myBtn:hover {
+    background-color: #3F48CB;
+    color: #ffffff;
+  }
+  @media screen and (min-width: 768px) {
+      #mybtn{
+          display: none !important;
+      }
+  }

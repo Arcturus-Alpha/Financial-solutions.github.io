@@ -1,0 +1,16 @@
+.rightSideBar {
+  position: fixed;
+  right: 0;
+  bottom: 1.1rem;
+  width: 3.5rem;
+}
+
+.rightSideBar img {
+  width: 2.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+}
+
+.rightSideBar .avatarIcon {
+  height: 2.5rem;
+}

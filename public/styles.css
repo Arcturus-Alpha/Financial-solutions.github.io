@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana;
+}
+body{
+    background-color: #F6F5F3;
+}
+.header,.header marquee{
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #3F48CB;
+}
+.header marquee{
+    /* position: relative; */
+    z-index: 100;
+}
+.header p{
+    border-right: 3px solid greenyellow;
+    display: inline;
+    color: white;
+    padding: 10px;
+}
+.header .first{
+    margin-left: -90vw;
+}
+
+.nav-block{
+    width: 20%;
+    display: block;
+    height: 90vh;
+    overflow: hidden;
+    /* direction: rtl; */
+    float: left;
+}
+.nav{
+    width: 95%;
+    margin-left: 5%;
+    padding-left: 10px;
+    height: 165px;
+    position: relative;
+    overflow-y: auto;
+    background-color: #F6F5F3;
+    margin-top: 45vh;              
+    line-height: 2em; 
+    direction: rtl;
+    transform: translate(0, -50%); 
+}
+.nav li{
+    direction: ltr;
+    list-style-type: none;
+    font-size: 1em;
+    width: 100%;
+    display: block;
+    float: none;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(157,156,161);
+}
+.nav a:hover{
+    color: #3F48CB;
+    font-size: 17px;
+}
+.nav-block .back img{
+    margin-left: 5%;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.main-block{
+    width: 75%;
+    float: left;
+    background-color: white;
+    margin-left: 1%;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 5px 10px rgba(0,0,0,0.08);
+}
+.main-block h1{
+    text-align: center;
+    padding: 10px;
+    font-family: serif;
+}
+.main-block span{
+    margin-left: 10px;
+    color: #3F48CB;
+}
+.main-block .content{
+    width: 75%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+.main-block .details{
+    margin-left: 10px;
+    width: 93%;
+    box-sizing: border-box;
+    padding-right: 20%;
+    font-family:'Gill Sans MT';
+}
+.main-block .functions{
+    margin-left: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+    width: 93%;
+}
+.main-block .functions div{
+    float: left;
+    width: 33%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.main-block .functions button{
+    background-color: white;
+    font-family: arial;
+    font-size: 0.75em;
+    padding: 7px;
+    color: #3F48CB;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid white;
+}
+.main-block .functions button:hover{
+    border-bottom: 3px solid #42B4E9;
+}
+.main-block .image{
+    width: 25%;
+    float: left;
+    position: relative;
+    margin-top: 40vh;              
+    line-height: 2em; 
+    transform: translate(0, -50%);   
+}
+.main-block img:hover{
+    transform: scale(1.5,1.5);
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  .deadlines{
+      width: 1%;
+      cursor: pointer;
+      float: right;
+      text-align: center;
+      transform: rotate(90deg);
+      margin-top: 10%;
+      cursor: pointer;
+      box-sizing: border-box;
+  }
+  .deadlines li{
+      display: inline;
+      padding: 10px;
+      box-sizing: border-box;
+  }
+  .deadlines a{
+    text-decoration: none;
+    color: #3F48CB;
+  }
+  .descriptions{
+      width: 100%;
+  }
+  .description{
+      width: 73%;
+      margin-left: 20%;
+      background-color: #B5E51D;
+      border: 1px solid #B5E51D;
+      overflow-y: auto;
+      height: 150px;
+      box-shadow: 7px -7px 5px 3px rgba(0,0,0,0.75);
+      font-family: 'Gill Sans MT';
+  }
+  .footer{
+      margin-left: 20%;
+      margin-right: 7%;
+      text-align: center;
+  }
+  .footer p{
+      margin: 0%;
+  }
+  .footer a{
+      text-decoration: none;
+      margin-top: 5px;
+      color: #3F48CB;
+      font-family: 'Courier';
+  }
+  .footer .icon{
+      margin: 0px;
+      margin-bottom: 10px;
+  }

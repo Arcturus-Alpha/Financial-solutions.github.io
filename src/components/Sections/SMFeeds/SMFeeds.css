@@ -1,0 +1,43 @@
+#socialFeeds {
+  position: relative;
+  overflow: hidden;
+}
+/* #socialFeeds .SM-Bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+} */
+
+#twitterTimeline iframe,
+#facebookTimeline iframe {
+  box-shadow: 0px 25px 40px -23px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0px 25px 40px -23px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 25px 40px -23px rgba(0, 0, 0, 0.8);
+}
+#socialFeeds iframe {
+  border-radius: 5px;
+  /* border: 1px solid rgba(0, 0, 0, 0.37) !important; */
+}
+
+@media screen and (max-width: 578px) {
+  .smFeeds {
+    justify-content: flex-start !important;
+    overflow-x: scroll;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #socialFeeds .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #socialFeeds .container {
+    max-width: 80%;
+  }
+}

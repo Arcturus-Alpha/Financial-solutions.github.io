@@ -1,0 +1,46 @@
+.descriptions{
+    width: 100%;
+}
+.description{
+    margin-left: 7%;
+    width: 86%;
+    font-size: 1em;
+    background-color: #B5E51D;
+    border: 1px solid #B5E51D;
+    overflow-y: auto;
+    height: 150px;
+    box-shadow: 7px -7px 5px 3px rgba(0,0,0,0.75);
+    font-family: 'Gill Sans MT';
+    padding: 10px;
+}
+.description::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .description::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+   
+  /* Handle */
+  .description::-webkit-scrollbar-thumb {
+    background-color: rgb(212,159,21); 
+  }
+  
+@media screen and (max-width: 768px) {
+  .description{
+    width: 100%;
+    padding: 10px;
+    margin: 0%;
+    box-sizing: border-box;
+    height: auto;
+    background-color: none;
+    box-shadow: none;
+    background-color: #ffffff;
+    border: none;
+  }
+  .descriptions{
+    width: 100%;
+    margin: 0%;
+}
+}

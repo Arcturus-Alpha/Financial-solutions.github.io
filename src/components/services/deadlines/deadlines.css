@@ -1,0 +1,45 @@
+.deadlines{
+    width: 2%;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    transform: rotate(90deg);
+    margin-top: 20%;
+    cursor: pointer;
+    margin-left: 1%;
+    box-sizing: border-box;
+    font-size: 3em;
+    z-index: 300;
+}
+@media only screen and (max-width: 1024px){
+  .deadlines{
+    margin-top: 30%;
+  }
+}
+.deadlines li{
+    display: inline;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.deadlines a{
+  text-decoration: none;
+  color: #3F48CB;
+}
+@media only screen and (max-width: 768px){
+  .sidebar{
+    display: none;
+  }
+  .deadlines{
+    width: 100%;
+    transform: none;
+    margin: 0px;
+    padding:0px;
+    font-size: 2em;
+  }
+  .deadlines li{
+    padding: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

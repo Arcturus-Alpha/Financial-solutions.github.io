@@ -1,0 +1,44 @@
+.deadlineContainer {
+  background: #3f48cc;
+  padding: 0.7rem 0;
+  border-top: 3px solid #00ff13;
+  border-bottom: 3px solid #00ff13;
+}
+.deadlineInner {
+  height: 37px;
+  padding: 0.4rem 0rem;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  transform: translate3d(0, 0, 0);
+  background: #4f58d0;
+  scroll-behavior: smooth;
+}
+
+.deadlineItem {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.deadlineInner:hover .deadlineItem {
+  animation-play-state: paused;
+}
+
+.deadlineItem div {
+  display: inline-block;
+  padding: 0 1em;
+  max-height: 100% !important;
+  opacity: 0.9;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+  border-right: 2px solid #00ff13;
+  margin: 0;
+}

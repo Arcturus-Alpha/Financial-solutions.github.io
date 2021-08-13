@@ -1,0 +1,22 @@
+body{
+    background-color: #F6F5F3;
+}
+.header,.header marquee{
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    z-index: 400;
+}
+.header{
+    background-color: #3F48CB;
+    position: fixed;
+}
+.header p{
+    border-right: 3px solid greenyellow;
+    display: inline;
+    color: white;
+    padding: 10px;
+}
+.header .first{
+    margin-left: -90vw;
+}

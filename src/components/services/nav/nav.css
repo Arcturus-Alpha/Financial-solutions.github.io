@@ -1,0 +1,95 @@
+.nav-block{
+    width: 20%;
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+.nav{
+    width: 95%;
+    margin-left: 5%;
+    padding-left: 10px;
+    height: 165px;
+    position: relative;
+    overflow-y: auto;
+    background-color: #F6F5F3;
+    margin-top: 45vh;              
+    line-height: 2em;
+    transform: translate(0, -50%); 
+}
+.nav::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .nav::-webkit-scrollbar-track {
+    background: #3F48CB; 
+  }
+   
+  /* Handle */
+  .nav::-webkit-scrollbar-thumb {
+    background: rgb(181, 230, 29); 
+  }
+  
+  /* Handle on hover */
+  .nav::-webkit-scrollbar-thumb:hover {
+    background: rgb(181,230,29); 
+  }
+
+.nav li{
+    direction: ltr;
+    list-style-type: none;
+    font-size: 0.875em;
+    width: 100%;
+    display: block;
+    float: none;
+}
+.nav li{
+    text-decoration: none;
+    color: rgb(157,156,161);
+}
+.nav li:hover{
+    color: #3F48CB !important;
+    font-size: 16px;
+    text-decoration: none;
+}
+.nav-block .back{
+  cursor: pointer;
+  font-size: 2em;
+}
+.nav-block .back img{
+    margin-left: 5%;
+    cursor: pointer;
+    width: auto;
+}
+.nav-block .nav-bar{
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-block{
+    width: 100%;
+    height: auto;
+    float: none;
+    margin: 0%;
+    margin-top: 65.38px;
+  }
+  .nav-block .nav{
+    margin: 0%;
+    width: 100%;
+    transform: none;
+    display: none;
+  }
+  .nav-block .back{
+    display: none;
+  }
+  .nav-block .nav-bar{
+    display: block;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .nav-block .back{
+    font-size: 1.5em
+  }
+  .nav-block .back img{
+    width: 24px;   
+  }
+}

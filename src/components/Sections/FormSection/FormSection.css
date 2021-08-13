@@ -1,0 +1,59 @@
+.formSection .form {
+  padding: 0.5rem;
+  background-color: var(--textColor);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formSection .formDates span {
+  margin: 0 0.4rem;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.formModalBtns {
+  background-color: brown;
+  color: goldenrod;
+  margin: 0 1rem;
+  font-size: 0.8rem;
+}
+
+.formModalBtns:hover {
+  color: #fff !important;
+}
+
+.formModal .closeModalIcon {
+  color: #fff;
+}
+
+.pg-viewer-wrapper {
+  height: 50vh !important;
+  overflow: scroll;
+}
+@media screen and (max-width: 578px) {
+  .formModal .modal-dialog {
+    top: 10% !important;
+  }
+
+  .formModal .closeModalIcon {
+    right: -5px;
+  }
+
+  .pg-viewer-wrapper {
+    height: 40vh !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #formSection .container {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #formSection .container {
+    max-width: 80%;
+  }
+}

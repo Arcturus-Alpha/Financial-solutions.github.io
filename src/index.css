@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --buttonBackground: #2da0e3;
+  --textColor: #4f58d0;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+section:nth-child(odd) {
+  background-color: #eeeeee !important;
+}

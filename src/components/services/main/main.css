@@ -1,0 +1,92 @@
+.main-block{
+    width: 75%;
+    float: left;
+    background-color: white;
+    margin-left: 1%;
+    margin-top: 15vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 5px 10px rgba(0,0,0,0.08);
+}
+.main-block h1{
+    width: 75%;
+    margin-right: 25%;
+    text-align: center;
+    padding: 10px;
+    font-family: serif;
+}
+.main-block span{
+    margin-left: 10px;
+    color: #3F48CB;
+}
+.main-block .content{
+    width: 75%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+.main-block .details{
+    width: 86%;
+    box-sizing: border-box;
+    font-family:'Gill Sans MT';
+    font-size: 1.25em;
+    overflow: hidden;
+}
+.main-block .content .halfArrow{
+    width: 7%;
+    float: left;
+}
+.main-block .content .halfArrow img{
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+}
+.main-block .content .info{
+    overflow: auto;
+}
+.main-block .mobile-image{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .main-block{
+        width: 100%;
+        margin-top: 10vh;
+        box-shadow: none;
+        box-sizing: border-box;
+        padding: 0%;
+    }
+    .main-block h1{
+        width: 100%;
+        margin: 0%;
+        font-size: 24px;
+    }
+    .main-block h1 span{
+        display: none;
+    }
+    .main-block .content .halfArrow img{
+        display: none;
+    }
+    .main-block .content{
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+    .main-block .details{
+        width: 100%;
+        margin: 0%;
+        padding: 10px;
+    }
+    .main-block .image{
+        display: none;
+    }
+    .main-block .mobile-image{
+        display: block;
+        background-image: url('../../Assets/books.png');
+        background-attachment: fixed;
+        background-size: cover;
+        height: 93vw;
+        width: 100%;
+        position: relative;
+    }
+  }
